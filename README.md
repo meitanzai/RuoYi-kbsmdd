@@ -11,7 +11,8 @@
 1. 微信小程序扫码点单
 1. 微信小程序外卖点单
 1. 后台可对微信小程序主页进行自定义（如颜色、布局、图片等）
-1. 支持微信支付与余额
+1. 支持微信支付与余额支付
+1. 后台含有订单管理、门店管理等对小程序的管理功能
 
 ### 截图
 #### 微信小程序界面
@@ -23,3 +24,28 @@
 #### 后台管理界面
 ![页面自定义](doc/img/ymzdy.png)
 ![门店管理](doc/img/mdgl.png)
+
+
+### 启动前注意
+1. 请在application.yml中提前配置以下参数
+```xml
+app:
+  #你项目的域名地址如： localhost:8082
+  domain: 
+
+wx:
+  miniapp:
+    configs:
+      - appid: 
+        secret: 
+  pay:
+    appId: 
+    #证书路径
+    keyPath: 
+    #商户id
+    mchId: 
+    #商户秘钥
+    mchKey: 
+```
+2. 数据库sql脚本的路径为 doc/ry-kbsmdd.sql
+
