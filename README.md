@@ -2,6 +2,9 @@
 ### 简介
 采用Java语言开发的微信扫码点餐系统，后台采用ruoyi作为快速开发框架，微信小程序的登录使用到了JWT登录。
 
+
+对应小程序端代码： [kbsmdd-wx](https://gitee.com/china-bin/kbsmdd-wx)
+
 ### 使用到的开源项目
 1. 后台快速开发框架： [ruoyi](https://gitee.com/y_project/RuoYi?_from=gitee_search)
 1. 微信开发sdk： [WxJava](https://gitee.com/binary/weixin-java-tools?_from=gitee_search)
